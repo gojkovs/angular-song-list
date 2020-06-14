@@ -1,0 +1,22 @@
+.clicked {
+background-color: #a3c6c4;
+color: white;
+transition: .2s;
+}
+
+mat-card:hover {
+  transform: scale(1.1);
+}
+
+mat-card {
+ width: 250px;
+ height: 250px;
+ margin-top: 50px;
+ transition: .2s;
+ cursor: pointer;
+ background-color: #f1f8fa;
+}
+
+mat-card img {
+  object-fit: contain;
+}

@@ -1,0 +1,14 @@
+<h1>Song list:</h1>
+<div class="container" fxLayout="row wrap" fxLayoutAlign="space-around center">
+
+<mat-card *ngFor="let song of songService.songs" (click)="chooseSong(song)" [class.clicked]="song==chosenSong">
+  <mat-card-title>{{song.title}}</mat-card-title>
+
+  <mat-card-subtitle>{{song.author}}</mat-card-subtitle>
+
+  <img mat-card-image src="{{song.imageUrl}}">
+</mat-card>
+</div>
+
+<song-detail [song]="chosenSong"></song-detail>
+
